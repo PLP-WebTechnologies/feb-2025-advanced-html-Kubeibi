@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: dimgray;
+            font-size: medium;
+        }
+        
+        form {
+        background: dimgray;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        margin: auto;
+        color: white;
+        }
+        input {
+        width: 100%;
+        padding: 8px;
+        margin: 10px o;
+        }
+        button {
+        background-color: #bac7bd;
+        color: white;
+        padding: 10px;
+        border: none;
+        width: 100%;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+           
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+           
+        }
+        
+        
+        video {
+            width: 80%;
+            border-radius: 10px;
+            
+        }
+    </style>
+    <head>
+        <title>ASSIGNMENT</title>
+        <body>
+           
+            <div>
+            <p>In Kubais garage we aim to dominate the aotu mobile game providing a handful of services for classic cars such as:
+            <ol type="i">
+            <li> Toyota Corolla</li>
+            <li>Honda Civic</li>
+            <li>Ford Mustang</li>
+            <li>BMW X5</li>
+            </ol></p>
+            </div>
+            <form action="" method="">
+                <label for="name">Name: </label>
+                    <input type="text" id="customer_name" name="customer_name" placeholder="full Name" required>
+                    <br>
+
+                    <label>Enter your Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password(min char(6))" minlength="6" required><br>
+
+
+                    <label>Enter your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" maxlength="18" required>
+
+
+                     <br>
+                    <label for="gender">Choose a service :</label>
+                    <input type="radio" id="maintenance"  name="maintenance" >Maintenance  
+                    <input type="radio" id="car_wash"  name="car_wash" >Car Wash
+                    <input type="radio" id="part_replacement"  name="part_replacement" >Part Replacment
+                    <br>
+
+
+                    <label for="dob">Select the date car was brought:</label>
+                    <input type="date" id="dob" name="dob" placeholder="dd/mm/year"required>
+                    <br>
+                    <select id="carBrand" name="carBrand" required>
+                        <option value="">-- Select Your Car Brand --</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ford">Ford</option>
+                        <option value="BMW">BMW</option>
+                    </select>
+                    <button name="submit_form" type="button">Submit Form</button>
+
+
+                
+
+               
+            </form>
+            <h2> Car Inventory List</h2>
+
+            <table>
+                <tr>
+                    <th>Car Name</th>
+                    <th>Color</th>
+                    <th>Specifications</th>
+                    <th>Date Brought</th>
+                </tr>
+                <tr>
+                    <td>Toyota Corolla</td>
+                    <td>Blue</td>
+                    <td>1.8L Engine, Automatic, Hybrid</td>
+                    <td>2024-02-15</td>
+                </tr>
+                <tr>
+                    <td>Honda Civic</td>
+                    <td>Red</td>
+                    <td>2.0L Turbo, Manual, Sport Edition</td>
+                    <td>2024-03-01</td>
+                </tr>
+                <tr>
+                    <td>Ford Mustang</td>
+                    <td>Black</td>
+                    <td>5.0L V8, Automatic, Leather Seats</td>
+                    <td>2024-01-20</td>
+                </tr>
+                <tr>
+                    <td>BMW X5</td>
+                    <td>White</td>
+                    <td>3.0L Turbo, All-Wheel Drive, Luxury Package</td>
+                    <td>2024-02-28</td>
+                </tr>
+            </table>
+            <h2> Car Image Gallery</h2>
+            <div class="gallery">
+                <img src="https://images.pexels.com/photos/19581626/pexels-photo-19581626/free-photo-of-raindrops-on-black-toyota-corolla.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Toyota Corolla">
+                <img src="https://images.pexels.com/photos/16062104/pexels-photo-16062104/free-photo-of-honda-civic-near-tree.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Honda Civic">
+                <img src="https://images.pexels.com/photos/25637467/pexels-photo-25637467.jpeg?cs=srgb&dl=pexels-jakewymoore-25637467.jpg&fm=jpg&_gl=1*rm5iz*_ga*MTMzNTU0MjIyOC4xNzQyNDE3NTIz*_ga_8JE65Q40S6*MTc0MjQxNzUyMy4xLjEuMTc0MjQxNzU3OS4wLjAuMA.." alt="Ford Mustang">
+                <img src="https://images.pexels.com/photos/7154531/pexels-photo-7154531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="BMW X5">
+            </div>
+        
+            <h2> Car Engine Showcase Video</h2>
+            <div>
+                <video controls>
+                    <source src="https://videocdn.cdnpk.net/harmony/content/video/partners1380/small_watermarked/BB_689cf300-9dad-4bf8-8f81-e029289f1b35_preview.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </body>
+    </head>
+</html>
